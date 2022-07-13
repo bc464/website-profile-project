@@ -44,6 +44,7 @@ footer > a:hover {
 button {
 	padding: 12px 24px;
 	border-radius: 10px;
+	border: none;
 	font-size: 16px;
 	background-color: #48cae4;
 	color: #fff;
@@ -219,11 +220,17 @@ footer {
 
 @media only screen and (max-width: 375px) {
 	.container,
-	nav {
+	nav,
+	.modal {
 		width: 100%;
 	}
-	.links-nav {
-		font-size: 8px;
+	.links-nav,
+	button {
+		font-size: 10px;
 	}
+	.modal-content {
+		width: 80%;
+	}
+
 	
 }
