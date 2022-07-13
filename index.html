@@ -19,16 +19,19 @@
 </head>
 <body>
   <main class="container">
-  <nav>
-    <a href="#home">Home</a>
-    <a href="#frontend">FrontEnd Mentor</a>
-    <a href="#codewell">Codewell</a>
-    <a href="#">Contact</a>
-  </nav>
+    <nav>
+      <a class="links-nav" class="links-nav" href="#home">Home</a>
+      <a class="links-nav" class="links-nav" href="#frontend">FrontEnd Mentor</a>
+      <a class="links-nav" class="links-nav" href="#codewell">Codewell</a>
+      <button class="btn" id="myBtn">Contact</button>
+    </nav>
+  
+  <!-- Main Text -->
   <section id="home" class="main-text">
     <h1>Hi</h1>
     <p>The purpose of this website is to showcase screenshots of projects worked on as a visual presentation of abilities. </p>
     <p>The content for each of the projects where provided by two websites that offer the developer the opportunity to apply their acquired skills in completing a said project. The websites are <a class="link--website" href="https://www.codewell.cc/" target="_blank">Codewell</a> and <a class="link--website" href="https://www.frontendmentor.io/" target="_blank">Frontend Mentor.</a></p>
+    <p>The languages used in completing these projects included HTML, CSS and JavaScript</p>
     <p>Enjoy and please feel free to contact us if you have any questions or need any assitance in your own project.</p>
   </section>
   
@@ -36,19 +39,67 @@
     <h2>FrontEnd Mentor</h2>
     <div class="html-img">
       <img name="slide"  />
-  </div>
-</section>
-  <section class="codewell" id="codewell">
-    <h2>Codewell</h2>
-    <div class="codewell-img">
-      <img name="slide2">
     </div>
-</section>
-<footer>
-  <a href="#home">Home</a>
-  <a href="#frontend">FrontEnd Mentor</a>
-  <a href="#codewell">Codewell</a>
-  <a href="#">Contact</a>
-</footer>
-</body>
+  </section>
+    <section class="codewell" id="codewell">
+      <h2>Codewell</h2>
+      <div class="codewell-img">
+        <img name="slide2">
+      </div>
+    </section>
+  <section class="modal-section">
+    <!-- Modal -->
+    <div id="myModal" class="modal">
+      <div class="modal-content">
+        <div class="modal-header">
+          <span class="close">&times</span>
+          <h2>Contact Information</h2>
+        </div>
+        <div class="modal-body">
+          <form id="signupForm">
+            <div class="form-content">
+              <div class="box flex">
+                <label for="name">name</label><br />
+                  <input
+                    id="name"
+                    type="text"
+                    name="name"
+                    placeholder="name"
+                    required
+                    autocomplete="name"
+                      />
+              </div>
+            </div>
+            <div class="box flex">
+              <label for="email">email</label><br />
+                <input
+                  type="email"
+                  id="email"
+                  name="email"
+                  required
+                  autocomplete="email" placeholder="example@example.com"
+                      />
+            </div>
+            <div class="box flex">
+              <div class="message-text">
+                <label for="message">message</label><br />
+                <textarea class="message-text-area" placeholder="message"></textarea>
+              </div>
+            </div>
+            <div class="btn-form">
+              <button type="submit" form="signupForm" class="btn-create">
+                  Submit
+              </button>
+            </div>
+          </form>
+        </div>
+      </div>
+    </section>
+    <footer>
+      <a class="links-nav" href="#home">Home</a>
+      <a class="links-nav" href="#frontend">FrontEnd Mentor</a>
+      <a class="links-nav" href="#codewell">Codewell</a>
+      <!-- <button class="btn" id="myBtn">Contact</button> -->
+    </footer>
+  </body>
 </html>

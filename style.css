@@ -41,6 +41,109 @@ footer > a:hover {
 	padding-bottom: 2px;
 	border-bottom: 2px solid #fff;
 }
+button {
+	padding: 12px 24px;
+	border-radius: 10px;
+	font-size: 16px;
+	background-color: #48cae4;
+	color: #fff;
+	font-family: 'Roboto', sans-serif;
+    text-transform: uppercase;
+	cursor: pointer;
+
+}
+button:hover {
+	
+}
+button:active {
+	box-shadow: inset 5px 5px 10px -3px rgba(0, 0, 0, 0.7);
+}
+/***MODAL ****/
+.modal {
+	display: none;
+	position: fixed;
+	z-index: 1;
+	padding-top: 100px;
+	top: 0;
+	width: 80%;
+	height: 100%;
+	overflow: auto;
+	background-color: rgba(0, 0, 0, 0.4);
+}
+.modal-content {
+	position: relative;
+	background-color: #fefefe;
+	margin: auto;
+	padding: 0;
+	border-radius: 8px;
+	width: 40%;
+	box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2),0 6px 20px 0 rgba(0,0,0,0.19);
+	-webkit-animation-name: animatetop;
+	-webkit-animation-duration: 0.4s;
+	animation-name: animatetop;
+	animation-duration: 0.4s;
+
+}
+/* Add Animation */
+
+@-webkit-keyframes animatetop {
+  from {top:-300px; opacity:0} 
+  to {top:0; opacity:1}
+}
+
+@keyframes animatetop {
+  from {top:-300px; opacity:0}
+  to {top:0; opacity:1}
+}
+
+/* The Close Button */
+.close {
+  color: white;
+  float: right;
+  font-size: 28px;
+  font-weight: bold;
+}
+
+.close:hover,
+.close:focus {
+  color: #000;
+  text-decoration: none;
+  cursor: pointer;
+}
+
+.modal-header {
+	padding: 15px;
+  	background-color: #48cae4;
+  	color: white;
+}
+.modal-header > h2 {
+	padding-top: 20px;
+}
+
+.modal-body {
+	padding: 15px;
+}
+.box {
+	font-family: 'Roboto', sans-serif;
+}
+.box > input {
+	padding: 10px;
+	border-radius: 5px;
+	border: 1px solid lightgray;
+	width: 70%;
+	font-family: 'Roboto', sans-serif;
+}
+.message-text-area {
+	padding: 10px;
+	width: 70%;
+	height: 100px;
+	font-family: 'Roboto', sans-serif;
+	border: 1px solid lightgray;
+}
+.btn-form {
+	margin-top: 10px;
+	font-family: 'Roboto', sans-serif;
+}
 /****HEAD*****/
 .main-text {
 	margin: 0 auto;
@@ -106,14 +209,20 @@ footer {
 		color: #fff;
 	}
 	nav,
-	footer {
+	footer,
+	button,
+	.modal-header {
 		background-color: #212529;
 	}
 
 }
 
 @media only screen and (max-width: 375px) {
-	a {
+	.container,
+	nav {
+		width: 100%;
+	}
+	.links-nav {
 		font-size: 8px;
 	}
 	
