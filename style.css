@@ -35,10 +35,13 @@ footer > a {
 	text-decoration: none;
 	text-transform: uppercase;
 	word-spacing: 1.5px;
+	line-height: 2;
+	
 }
 nav > a:hover,
 footer > a:hover {
-	padding-bottom: 2px;
+	/*margin-bottom: 2px;*/
+	/*padding-bottom: 2px;*/
 	border-bottom: 2px solid #fff;
 }
 button {
@@ -54,7 +57,9 @@ button {
 
 }
 button:hover {
-	
+	border: outset;
+	border: none;
+	box-shadow: 2px 2px 3px  rgba(0, 0, 0, 0.7);
 }
 button:active {
 	box-shadow: inset 5px 5px 10px -3px rgba(0, 0, 0, 0.7);
@@ -174,7 +179,7 @@ h1 {
 
 /****HTML IMAGES SLIDE****/
 .frontend, 
-.codewell, 
+.codewell-section, 
 .react-code,
 .API-section {
 	padding-top: 100px;
@@ -186,17 +191,70 @@ h2 {
 	text-align: center;
 	margin-bottom: 30px;
 }
-.frontend,
-.codewell {
+/***FRONTEND*****/
+
+.frontend {
 	width: 80%;
 	margin: 50px auto;
 	text-align: center;
 }
-img {
-	height: 600px;
+.frontend-img {
+	height: 500px;
+	width: 500px;
 	max-width: 100%;
 	border: 8px solid #90e0ef;
 }
+
+/***CODEWELL SECTION****/
+
+.codewell-main {
+	padding:  10px 0 100px;
+	display: grid;
+  grid-column-gap: 6rem;
+  grid-auto-flow: column;
+  overflow-x: scroll;
+  -ms-scroll-snap-type: x mandatory;
+  scroll-snap-type: x mandatory;
+}
+.codewell-card {
+	padding: 20px;
+  background-color: #f7f7f7;
+  border-radius: 3px;
+  -webkit-box-shadow: 0 1.5rem 4rem rgba(0, 0, 0, 0.15);
+  box-shadow: 0 1.5rem 4rem rgba(0, 0, 0, 0.15);
+  scroll-snap-align: center;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+  -ms-flex-direction: column;
+  flex-direction: column;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+}
+.codewell-main:before,
+.codewell-main:after {
+	content: "";
+	width: 2rem;
+}
+.codewell-img-card {
+	height: 300px;
+	width: 300px;
+}
+.codewell-img {
+	width: 100%;
+	height: 100%;
+	cursor: pointer;
+}
+.codewell-img:hover {
+	width: 140%;
+	height: 110%;
+	z-index: 10;
+}
+
+/*****FOOTER*****/
 footer {
 	background-color: #48cae4;
 	padding: 20px;
@@ -242,17 +300,28 @@ footer {
 }
 
 @media only screen and (max-width: 375px) {
+	body {
+		width: 375px;
+	}
 	.container,
 	nav,
 	.modal {
 		width: 100%;
 	}
+	
 	.links-nav,
 	button {
 		font-size: 10px;
 	}
 	.modal-content {
 		width: 80%;
+	}
+	.api-container {
+		grid-template-columns: 1fr;
+		
+	}
+	.api-item {
+		width: 330px;
 	}
 
 	
