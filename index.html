@@ -8,7 +8,7 @@
 
   <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon-32x32.png">
   
-  <title>Website Developer</title>
+  <title>Developer Profile</title>
 
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -18,13 +18,25 @@
   <script defer src="script.js"></script>
 </head>
 <body>
-  <main class="container">
+  <main class="container-main">
     <nav>
       <a class="links-nav" class="links-nav" href="#home">Home</a>
-      <a class="links-nav" class="links-nav" href="#frontend">FrontEnd Mentor</a>
-      <a class="links-nav" class="links-nav" href="#codewell">Codewell</a>
-      <a class="links-nav" class="links-nav" href="#react">React</a>
-      <a class="links-nav" class="links-nav" href="#api">API's</a>
+      <div class="dropdown">
+        <button class="dropbtn" onclick="myFunction()">Mentor-Sites &nabla;</button>
+        <div class="dropdown-content" id="myDropdown">
+          <a class="links-nav" class="links-nav" href="#frontend">FrontEnd Mentor</a>
+          <a class="links-nav" class="links-nav" href="#frontend2">FrontEnd Mentor2</a>
+          <a class="links-nav" class="links-nav" href="#codewell">Codewell</a>
+        </div>
+      </div>
+      <div class="dropdown">
+        <button class="dropbtn" onclick="myFunction()">Other-Projects &nabla;</button>
+        <div class="dropdown-content" id="myDropdown">
+          <a class="links-nav" class="links-nav" href="#react">React</a>
+          <a class="links-nav" class="links-nav" href="#api">API's</a>
+        </div>
+      </div>
+      
 
       <button class="btn" id="myBtn">Contact</button>
     </nav>
@@ -44,6 +56,180 @@
       <img class="frontend-img" name="slide"  />
     </div>
   </section>
+
+
+
+  <!-- carousel on scroll -->
+<div class="container" id="frontend2">
+  
+  <h1> FrontEnd Mentor2 </h1>
+  
+  <div class="carousel">
+    
+    <div class="arrow" data-dir="-1"> 
+      ⟻
+    </div>
+    <div class="arrow" data-dir="1"> 
+      ⟼
+    </div>
+    
+      <div class="card card-on-left"
+           data-pos="1">
+        <img
+             src="images/frontend/Advice generator app.png"
+             alt="advice generator app"
+             class="illustration"
+             >
+      </div>
+      <div class="card card-on-right"
+           data-pos="2">
+        <img
+             src="images/frontend/Bookmark landing page.png"
+             alt="bookmark landing page"
+             class="illustration"
+             >
+      </div>
+      <div class="card card-on-left"
+           data-pos="3">
+        <img
+             src="images/frontend/Calculator app.png"
+             alt="calculator app"
+             class="illustration"
+             >
+      </div>
+      <div class="card card-on-right"
+           data-pos="4">
+        <img
+             src="images/frontend/Chat-app-css-illustration.png"
+             alt="Chat-app-css-illustration"
+             class="illustration"
+             >
+      </div>
+      <div class="card card-on-left"
+           data-pos="5">
+        <img
+             src="images/frontend/E-commerce product page.png"
+             alt="e-commerce product page"
+             class="illustration"
+             >
+      </div>
+            <div class="card card-on-right"
+                 data-pos="6">
+        <img
+             src="images/frontend/Easybank landing page.png"
+             alt="Easybank landing page"
+             class="illustration"
+             >
+      </div>
+            <div class="card card-on-left"
+             data-pos="7">
+        <img
+             src="images/frontend/Expenses chart component.png"
+             alt="expenses chart component"
+             class="illustration"
+             >
+        </div>
+          <div class="card card-on-right"
+             data-pos="8">
+              <img
+             src="images/frontend/Intro section with dropdown navigation.png"
+             alt="intro section with dropdown navigation"
+             class="illustration"
+             >
+          </div>
+
+          <div class="card card-on-left"
+             data-pos="9">
+              <img
+             src="images/frontend/IP Address Tracker.png"
+             alt="ip address tracker"
+             class="illustration"
+             >
+          </div>
+          <div class="card card-on-right"
+             data-pos="10">
+              <img
+             src="images/frontend/Launch countdown timer.png"
+             alt="launch countdown timer"
+             class="illustration"
+             >
+          </div>
+          <div class="card card-on-left"
+             data-pos="11">
+              <img
+             src="images/frontend/Manage landing page.png"
+             alt="manage landing page"
+             class="illustration"
+             >
+          </div>
+          <div class="card card-on-right"
+             data-pos="12">
+              <img
+             src="images/frontend/NFT preview card component.png"
+             alt="NFT preview card component"
+             class="illustration"
+             >
+          </div>
+          <div class="card card-on-left"
+             data-pos="13">
+              <img
+             src="images/frontend/Order summary card.png"
+             alt="order summary card"
+             class="illustration"
+             >
+          </div>
+          <div class="card card-on-right"
+             data-pos="14">
+              <img
+             src="images/frontend/QR code component.png"
+             alt="or code component"
+             class="illustration"
+             >
+          </div>
+          <div class="card card-on-left"
+             data-pos="15">
+              <img
+             src="images/frontend/Room homepage.png"
+             alt="room homepage"
+             class="illustration"
+             >
+          </div>
+          <div class="card card-on-right"
+             data-pos="16">
+              <img
+             src="images/frontend/Shortly URL shortening API Challenge.png"
+             alt="Shortly URL"
+             class="illustration"
+             >
+          </div>
+          <div class="card card-on-left"
+             data-pos="17">
+              <img
+             src="images/frontend/Sunnyside agency landing page.png"
+             alt="Sunnyside agency"
+             class="illustration"
+             >
+          </div>
+          <div class="card card-on-right"
+             data-pos="18">
+              <img
+             src="images/frontend/Time tracking dashboard.png"
+             alt="time tracking dashboard"
+             class="illustration"
+             >
+          </div>
+          <div class="card card-on-left"
+             data-pos="19">
+              <img
+             src="images/frontend/Tip calculator app.png"
+             alt="tip calculator"
+             class="illustration"
+             >
+          </div>
+        </div>
+          <a href="https://maxime-malfilatre.com" class="signature" target="_blank">creator on carousel</a>
+        </div>
+
     <section class="codewell-section" id="codewell">
       <h2 class="codewell__heading">Codewell</h2>
       <div class="codewell-main">
@@ -221,7 +407,7 @@
               </div>
             </div>
             <div class="btn-form">
-              <button type="submit" form="signupForm" class="btn-create">
+              <button type="submit" form="signupForm" class="btn-create btn">
                   Submit
               </button>
             </div>
@@ -233,6 +419,8 @@
       <a class="links-nav" href="#home">Home</a>
       <a class="links-nav" href="#frontend">FrontEnd Mentor</a>
       <a class="links-nav" href="#codewell">Codewell</a>
+       <a class="links-nav" class="links-nav" href="#react">React</a>
+          <a class="links-nav" class="links-nav" href="#api">API's</a>
       <!-- <button class="btn" id="myBtn">Contact</button> -->
     </footer>
   </body>
