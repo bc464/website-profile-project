@@ -22,6 +22,7 @@ images[15] = "./images/frontend/Shortly URL shortening API Challenge.png";
 images[16] = "./images/frontend/Sunnyside agency landing page.png";
 images[17] = "./images/frontend/Time tracking dashboard.png";
 images[18] = "./images/frontend/Tip calculator app.png";
+images[19] = "./images/frontend/Rock Paper Scissors.png";
 
 // Change Image
 function changeImg(){
